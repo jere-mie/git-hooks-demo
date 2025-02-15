@@ -12,6 +12,11 @@ Check out my blog post on Git Hooks here: [blog.bornais.ca/posts/2025-02-06-git-
 ```sh
 #!/bin/sh
 
+# Check if the current directory is "subdir"
+if [ "$(basename "$PWD")" != "subdir" ]; then
+    cd subdir || { echo "Failed to enter subdir"; exit 1; }
+fi
+
 echo "Running linting..."
 npm run lint
 if [ $? -ne 0 ]; then
@@ -24,6 +29,11 @@ fi
 
 ```sh
 #!/bin/sh
+
+# Check if the current directory is "subdir"
+if [ "$(basename "$PWD")" != "subdir" ]; then
+    cd subdir || { echo "Failed to enter subdir"; exit 1; }
+fi
 
 echo "Running tests..."
 npm run test
