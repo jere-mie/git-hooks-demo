@@ -1,0 +1,22 @@
+{
+  "name": "git-hooks-demo",
+  "version": "1.0.0",
+  "description": "Showing how git hooks work",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "lint": "node lint.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jere-mie/git-hooks-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/jere-mie/git-hooks-demo/issues"
+  },
+  "homepage": "https://github.com/jere-mie/git-hooks-demo#readme",
+  "type": "module"
+}
