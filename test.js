@@ -1,6 +1,6 @@
 console.log('Testing...');
 
-let shouldFail = false;
+let shouldFail = true;
 
 if (shouldFail) {
     console.error('Testing failed');
